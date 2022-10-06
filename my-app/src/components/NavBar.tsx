@@ -16,8 +16,8 @@ import '../index.css';
 import Logo from '../assets/thompson.png'
 import Profile from '../assets/profile.png'
 
-const pages = ['DEMARCHE', 'PARTENARIAT'];
-const settings = ['Profile'];
+const pages = ['PARTENARIAT', 'CONTACT'];
+const settings = ['Me connecter', 'Devenir membre'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -39,8 +39,9 @@ const NavBar = () => {
   };
 
   return (
+    
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -61,7 +62,7 @@ const NavBar = () => {
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Button
-                
+                href="/"
                 onClick={handleCloseNavMenu}
                 sx={{
                     
@@ -80,6 +81,7 @@ const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                href="/search"
                 sx={{
                     mr: 2,
                     display: { xs: 'none', md: 'flex' },
@@ -98,7 +100,7 @@ const NavBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 2  }}>
                 <Avatar alt="Remy Sharp" src={Profile} />
               </IconButton>
             </Tooltip>

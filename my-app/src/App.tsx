@@ -9,16 +9,14 @@ import Search from './pages/Search';
 function App() {
   return (
     <>
+    <NavBar/>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
-          <Route path="search" element={<Search />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="search" element={<Search />} />
       </Routes>
     </BrowserRouter>
-    <NavBar/>
-    <Card/>
+    
     </>
   );
 }

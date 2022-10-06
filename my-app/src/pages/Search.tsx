@@ -1,10 +1,14 @@
 import React from 'react';
+import Card from '../components/Card';
 
 const Search = () => {
     return (
-        <div>
-            
-        </div>
+    <div className='center'>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
     );
 };
 

@@ -2,12 +2,13 @@ import { Grid, Typography, Rating, Box, Accordion, AccordionSummary, AccordionDe
 import React from 'react';
 import tracteur from '../assets/unknown.png'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import "./Card.css"
 
 
 const Card = () => {
     return (
-    
-    <Grid container sx={{ width: "600px", margin: "20px", boxShadow: 1, borderRadius: 1, backgroundColor: "#FAFAFA" }}>
+    <>
+    <Grid container sx={{ width: "600px", margin: "20px", boxShadow: 1, borderRadius: 1, backgroundColor: "#FAFAFA"}} className="center" >
 
         <Grid item xs={7} sx={{ paddingLeft: "20px", paddingTop: "20px" }}>
             <Typography sx={{ fontWeight: "bold" }}>Titre</Typography>
@@ -59,6 +60,7 @@ const Card = () => {
         </Grid>
 
     </Grid>
+</>   
 
     );
 };
