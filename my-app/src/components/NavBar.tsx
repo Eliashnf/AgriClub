@@ -18,7 +18,7 @@ import Profile from '../assets/profile.png'
 import { Link } from '@mui/material';
 
 const pages = ['PARTENARIAT', 'CONTACT'];
-const settings = ['Me connecter', 'Devenir membre'];
+const settings = ['Me connecter'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -82,7 +82,7 @@ const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                href="/search"
+                href="/contacter"
                 sx={{
                     mr: 2,
                     display: { xs: 'none', md: 'flex' },
