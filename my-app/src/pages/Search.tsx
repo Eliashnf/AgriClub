@@ -1,14 +1,17 @@
 import React from 'react';
 import Card from '../components/Card';
+import SearchBar from '../components/SearchBar';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 const Search = () => {
     return (
-    <div className='center'>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-    </div>
+    <Box className='center'>
+      
+      <SearchBar />
+      
+        <Card/>
+    </Box>
     );
 };
 

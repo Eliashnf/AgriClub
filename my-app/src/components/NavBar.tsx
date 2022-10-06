@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import '../index.css';
 import Logo from '../assets/thompson.png'
 import Profile from '../assets/profile.png'
+import { Link } from '@mui/material';
 
 const pages = ['PARTENARIAT', 'CONTACT'];
 const settings = ['Me connecter', 'Devenir membre'];
@@ -120,11 +121,13 @@ const NavBar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <Link href='/login' style={{color: "black"}}>     
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+              </Link>
             </Menu>
           </Box>
         </Toolbar>

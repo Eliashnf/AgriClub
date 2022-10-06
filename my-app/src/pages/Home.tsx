@@ -5,10 +5,30 @@ import Tracteur from "../assets/imgAccueil1.png"
 import Phone from "../assets/imgAccueil2.png"
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import SearchBar from '../components/SearchBar';
 
 const Home = () => {
     return (
         <div className='middle'>
+            <Typography
+                    align='center'
+                    paragraph
+                    variant='h4'
+                    sx={{marginTop: "30px"}}   
+                    >
+                        Agriclub l’expert du monde agricole
+            </Typography>
+            <div className='align'>
+                <SearchBar/>
+            </div>
+            <Typography
+                    align='center'
+                    paragraph
+                    variant='h4'
+                    sx={{marginTop: "30px"}}   
+                    >
+                        Qui sommes-nous ?
+            </Typography>
             <Grid container sx={{ width: "1200px", margin: "20px"}} >
                 <Grid item xs={7} sx={{ paddingLeft: "20px", paddingTop: "20px" }}>  
                     <Typography
@@ -59,7 +79,7 @@ const Home = () => {
                     paragraph
                     variant='h4'   
                     >
-                        Salut
+                        Ils nous font confiance:
                     </Typography>
         </div>
     );
